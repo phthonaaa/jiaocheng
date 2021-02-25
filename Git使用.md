@@ -116,3 +116,33 @@ git reflog     得到之前的版本号
 
 ### 5.1提交代码到github（当作git服务器）
 
+![image-20210225142744133](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210225142744133.png)
+
+推送到远程仓库：
+
+​	git push https://github.com/phthonaaa/jiaocheng.git master就可以上传到我的jiaocheng仓库的master分支中了。
+
+从远程仓库中pull数据：（本地需要初始化一个仓库）（多次操作会合并分支数据）
+
+git pull 地址 master
+
+例如：git pull https://github.com/liyifeng1994/ssm.git master
+
+会把远程的数据得到，放到本地仓储。
+
+git clone 地址
+
+会得到远程仓储的相同数据（多次操作会覆盖本地内容）
+
+### 5.2流行框架
+
+上面的方式需要账户和密码，不太安全，这里可以较少安全问题。
+
+SHH方式上传代码：
+
+- 公钥 私钥，两者之间有关联的。
+- 生成公钥和私钥
+- 命令：ssh-keygen -t rsa -C "17608435883@163.com",然后对应的把公钥上传到我们的github的settings中的ssh中去。
+
+![image-20210225152831356](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210225152831356.png)
+
